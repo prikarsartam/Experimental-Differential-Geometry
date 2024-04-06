@@ -4,7 +4,7 @@ $$E =  \frac{h \gamma^2}{ (h^2-1) (h^2+\gamma^2-1)^{\frac{3}{2}}} = r_h^2 + r^2 
 
 $$ F= - \ \frac{  \gamma}{ (h^2+\gamma^2-1)^{\frac{3}{2}}} = r_h r_{\gamma} + r^2 [ \ sin^2(\theta) \ \phi_h \phi_{\gamma} + \theta_h \theta_{\gamma} \ ]$$
 
-$$G =  \frac{2 h^3 - 2 h^2 \sqrt{-1 + h^2 + \gamma^2} - 2 (-1 + \gamma^2) \sqrt{-1 + h^2 + \gamma^2} + h (-2 + \gamma^2 + \gamma^4)}{(-1 + \gamma^2)^2 (-1 + h^2 + \gamma^2)^{3/2}} = -\frac{2}{(-1 + \gamma^2)^2} + \frac{h \gamma^2}{(-1 + \gamma^2) (-1 + h^2 + \gamma^2)^{\frac{3}{2}}} + \frac{2 h}{(-1 + \gamma^2)^2 (-1 + h^2 + \gamma^2)^{\frac{1}{2}}} =  r_{\gamma}^2 + r^2 [ \ sin^2(\theta) \ \phi_{\gamma}^2 + \theta_{\gamma}^2 \ ]
+$$G =  \frac{2 h^3 - 2 h^2 \sqrt{-1 + h^2 + \gamma^2} - 2 (-1 + \gamma^2) \sqrt{-1 + h^2 + \gamma^2} + h (-2 + \gamma^2 + \gamma^4)}{(-1 + \gamma^2)^2 (-1 + h^2 + \gamma^2)^{3/2}} = =  r_{\gamma}^2 + r^2 [ \ sin^2(\theta) \ \phi_{\gamma}^2 + \theta_{\gamma}^2 \ ]
 $$
 
 
