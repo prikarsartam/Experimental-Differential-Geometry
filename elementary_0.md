@@ -1,19 +1,32 @@
 ### Surface from Riemannian Metric - Free-Boundary Problem - Possibly learning through training on B-Spline data over a range of 3D embeddinds.
 
 Some experiments on finding parameterization of at least one 3 dimensional embedding of a positively curved 2 dimensional riemannian manifold only using the metric.  
+
+
 $$ds^2 = E \ dh^2 + 2F \ dh \ d\gamma + G \ d\gamma^2 \equiv dr(h,\gamma)^2+r(h,\gamma)^2 \Big(sin(\theta(h,\gamma))^2 \ d\phi(h,\gamma)^2 + d\theta(h,\gamma)^2 \Big)$$
-Where I am using the idea that riemannian 2 manifolds with strictly positive gaussian curvature are all locally diffeomorphic to a sphere, there I am assuming that $K=\frac{1}{r^2}$ may restrict our definition of the first fundamental form a 2-fn differential equation from a 3-fn one. Since due to Theorema Egregium, gaussian curvature is intrinsic it can be derived from the metric alone would give:
+
+Where I am using the idea that riemannian 2 manifolds with strictly positive gaussian curvature are all locally diffeomorphic to a sphere, there I am assuming that 
+$K=\frac{1}{r^2}$ may restrict our definition of the first fundamental form a 2-fn differential equation from a 3-fn one. Since due to Theorema Egregium, gaussian curvature is intrinsic it can be derived from the metric alone would give:
+
 $$\frac{E}{r^2}= \partial_h (log(r))^2 + sin^2(\theta) \ \partial_h \phi^2 +  \partial_h \theta^2  \implies \frac{E}{r^2} - \partial_h (log(r))^2  =  sin^2(\theta) \ \partial_h \phi^2 +  \partial_h \theta^2 $$
+
 $$\frac{F}{r^2} = \partial_h (log(r)) \ \partial_{\gamma} (log(r)) + sin^2(\theta) \ \partial_h \phi \ \partial_{\gamma} \phi +  \partial_h \theta \ \partial_{\gamma} \theta  \implies  \frac{F}{r^2} - \partial_{\gamma}(log(r)) \ \partial_h(log(r)) =  sin^2(\theta) \ \partial_h \phi  \ \partial_{\gamma} \phi +  \partial_h \theta \ \partial_{\gamma} \theta$$
+
 $$\frac{G}{r^2} = \partial_{\gamma} (log(r))^2 + sin^2(\theta) \ \partial_{\gamma} \phi^2 +  \partial_{\gamma} \theta^2  \implies \frac{G}{r^2} - \partial_{\gamma} (log(r))^2  =  sin^2(\theta) \ \partial_{\gamma} \phi^2 +  \partial_{\gamma} \theta^2 $$
 So that Given $(E,F,G) \to (E,F,G,K,r)$ the system of equation that needs to be solved to obtain the complete parameterization is:
+
 $$ \frac{E}{r^2}- \partial_h (log(r))^2 = sin^2(\theta) \ \partial_h \phi^2 +  \partial_h \theta^2 =   \frac{-1 - 2 h^4 + \gamma^2 + h^2 (3 + \gamma^2) + 2 h^3 \sqrt{-1 + h^2 + \gamma^2} + 2 h (-1 + \gamma^2) \sqrt{-1 + h^2 + \gamma^2}}{4 (-1 + h^2) (-1 + h^2 + \gamma^2)^2} = E_0
 $$
+
 $$\frac{F}{r^2} - \partial_{\gamma}(log(r)) \ \partial_h(log(r))  = sin^2(\theta) \ \partial_h \phi  \ \partial_{\gamma} \phi +  \partial_h \theta \ \partial_{\gamma} \theta = -\frac{\gamma \left(-2+5 h^2+2 \gamma ^2+3 h \sqrt{-1+h^2+\gamma ^2}\right)}{4 \left(-1+h^2+\gamma ^2\right)^2 \left(h+\sqrt{-1+h^2+\gamma ^2}\right)} = F_0$$
+
 $$\frac{G}{r^2} - \partial_{\gamma} (log(r))^2  =  sin^2(\theta) \ \partial_{\gamma} \phi^2 +  \partial_{\gamma} \theta^2 = \frac{4 + 8 h^4 - 4 \gamma^2 + 8 h^3 \sqrt{-1 + h^2 + \gamma^2} + 2 h (-4 + \gamma^2) \sqrt{-1 + h^2 + \gamma^2} + h^2 (-12 + 5 \gamma^2)}{4 (-1 + h^2 + \gamma^2)^2 (h + \sqrt{-1 + h^2 + \gamma^2})^2} = G_0$$
+
 The coefficients of my First Fundamental Form : 
 $$E =  \frac{h \gamma^2}{ (h^2-1) (h^2+\gamma^2-1)^{\frac{3}{2}}} = r_h^2 + r^2 [ \ sin^2(\theta) \ \phi_h^2 + \theta_h^2 \ ]$$
+
 $$ F= - \ \frac{  \gamma}{ (h^2+\gamma^2-1)^{\frac{3}{2}}} = r_h r_{\gamma} + r^2 [ \ sin^2(\theta) \ \phi_h \phi_{\gamma} + \theta_h \theta_{\gamma} \ ]$$
+
 $$G =  \frac{2 h^3 - 2 h^2 \sqrt{-1 + h^2 + \gamma^2} - 2 (-1 + \gamma^2) \sqrt{-1 + h^2 + \gamma^2} + h (-2 + \gamma^2 + \gamma^4)}{(-1 + \gamma^2)^2 (-1 + h^2 + \gamma^2)^{3/2}} =   r_{\gamma}^2 + r^2 [ \ sin^2(\theta) \ \phi_{\gamma}^2 + \theta_{\gamma}^2 \ ]
 $$
 
