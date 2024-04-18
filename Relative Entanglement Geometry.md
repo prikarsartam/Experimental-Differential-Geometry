@@ -17,9 +17,10 @@ $$=\frac{1}{2} \ Tr[ \  \rho^{-1}  \delta \lambda_{i} \delta \lambda_{j} \ \part
 
 $$ = - \frac{1}{2} \ Tr[ \  \rho \  \partial^i \partial^j \  ln (\rho) \  \ ] \ \delta \lambda_{i} \delta \lambda_{j} \ $$
 
-SO that we have : 
+So that we have : 
 
  $$When \ : \ \  \ \delta \lambda \to 0, \ \text{at the leading $\mathcal{O}(\delta \lambda^2) \ :$} \ \ \ \ S(\rho_{\lambda} || \rho_{\lambda+\delta \lambda}) = g_{ij} \ \delta \lambda_{i} \delta \lambda_{j} \ \  $$
 
 $$\text{where: } \ \ g_{ij} = - \frac{1}{2} \ Tr[ \  \rho \  \partial^i \partial^j \  ln (\rho) \  \ ] = \frac{1}{2} \ Tr[ \   \rho^{-1} \ \ \partial^i \rho \  \partial^j \rho  \ - \  \partial^i \partial^j \rho \ \ ] $$
- 
+
+Relating the susceptibility of Relative Entanglement Entropy of the (sub-)system with the line element of a Riemannian Manifold coordinatised by the parameters of the theory. 
