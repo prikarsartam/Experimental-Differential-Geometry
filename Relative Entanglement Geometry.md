@@ -14,4 +14,6 @@ SO that we have :
  $$When \ : \ \  \ \delta \lambda \to 0, \ \text{at the leading $\mathcal{O}(\delta \lambda^2) \ :$} \ \ \ \ S(\rho_{\lambda} || \rho_{\lambda+\delta \lambda}) = g_{ij} \ \delta \lambda_{i} \delta \lambda_{j} \ \  $$
 
 $$\text{where: } \ \ g_{ij} = - \frac{1}{2} \ Tr[ \  \rho \  \partial^i \partial^j \  ln (\rho) \  \ ] = \frac{1}{2} \ Tr[ \   \rho^{-1} \ \ \partial^i \rho \  \partial^j \rho  \ - \  \partial^i \partial^j \rho \ \ ] $$
+
+
  
